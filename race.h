@@ -13,7 +13,7 @@ class Race {
 		bool keepGoing;
 	public:
 		Race();
-		Race(int length);	
+		Race(int Horse::length);	
 		void printLane(int horseNumber);
 		void start();
 

@@ -2,7 +2,7 @@
 
 
 #include "horse.h"
-#include "race.h"
+
 
 #include <string>
 #include <sstream>

@@ -1,9 +1,10 @@
-//horse.h
-
-#ifndef HORSE_H_EXISTS
-#define HORES_H_EXISTS
+#ifndef _HORSE_H_EXISTS_
+#define _HORSE_H_EXISTS_
 
 #include <string>
+
+
+
 
 class Horse {
 
