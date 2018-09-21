@@ -3,7 +3,7 @@
 
 #include <string>
 #include <sstream>
-#include "horse.h"
+
 
 class Race {
 
@@ -13,7 +13,7 @@ class Race {
 		bool keepGoing;
 	public:
 		Race();
-		Race(int Horse::length);	
+		Race(int length);	
 		void printLane(int horseNumber);
 		void start();
 

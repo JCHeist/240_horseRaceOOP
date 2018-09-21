@@ -5,10 +5,12 @@
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
+#include <sstream>
 
 Race::Race(){
 	
-	Race::length = 15;	
+	Race::length = 15;
+	Race::keepGoing = true;	
 }
 
 Race::Race(int length){
@@ -18,7 +20,7 @@ Race::Race(int length){
 }
 
 void Race::printLane(int horseNumber){
-	 std::stringstream track;//create variable
+	std::stringstream track;//create variable
         int i;
         //go through each possible spot in the track for selected horse
         for(i = 0; i < Race::length; i ++){
@@ -49,5 +51,52 @@ void Race::printLane(int horseNumber){
 void Race::start(){
 	
 	std::srand(time(NULL));//set random seed based off of current time   
+
+	int i;
+	
+
+	//declare variables for for loop
+
+	int coin;
+	std::cout << std::endl << "Ready... Set... GO!!!" << std::endl;
+	
+	//take a turn by going throgh each horse
+	while(Race::keepGoing){
+
+		for(i = 0; i < 5; i++){//look at every horse's spot
+			
+			Race::horses[i].Horse::advance();
+			Race::printLane(i);//print the track of this horse
+		} 
+		std::cout << std::endl;		//leave space for next turn
+
+		//create bool to say whether enter is pressed or not		
+		bool enter = false;
+
+		std::string resp = "";//ensure resp is nothing. this means just enter was pressed		
+
+
+		while(enter == false){//while enter is not pressed keep asking for enter
+		
+
+			if(Race::keepGoing == true){
+
+				std::cout << "Press RETURN to advance a turn!";
+			}else{
+
+				std::cout << "Press enter to end the race.";				
+
+			}
+			getline(std::cin, resp);//ask for enter each time that is not all that is pressed
+			
+			if(resp == ""){
+
+				enter = true;//enter has been pressed
+	
+			}
+		}
+	}
+
+
 
 }

@@ -4,8 +4,6 @@
 #include <string>
 
 
-
-
 class Horse {
 
 	private:

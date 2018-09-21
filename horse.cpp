@@ -23,7 +23,7 @@ void Horse::advance() {
 
        	result = std::rand() % 2;//generate a random number between 0 and the max rand number. if odd, return 1 if even return 0
        	
-	Horse::position = Horse::position + result;;
+	Horse::position = Horse::position + result;
 	
 	
 }

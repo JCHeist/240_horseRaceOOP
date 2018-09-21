@@ -1,14 +1,11 @@
-
-bool keepGoing = true;
+#include "horse.h"
+#include "race.h"
+#include <iostream>
 
 int main(){
 	
 	Race r;
-	r.start;
+	r.start();
 	
-	Horse h;
-	h.advance();
-	h.getPosition;
-
-return 1;
+return 0;
 }
