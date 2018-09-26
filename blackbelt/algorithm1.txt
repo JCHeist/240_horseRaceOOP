@@ -133,7 +133,11 @@ Race(){
 
 
 	void start() {
+	1)set random seed to be bassed on current time
 
+	2)Go through each horse and print the lane of each horse
+
+	3)Ask user to advance turn if race is still going by pressing enter. If the race is not still going press enter to end the race.
 
 
 }
@@ -150,15 +154,7 @@ Steps:
 
 main()
 
-1. Create horses outside of main to be global array with 5 indexes all set to 0
-
-2. Go through each horse (for i in horse[]
-	a. decide if one or zero should be added to horses[i] by means on flipCoin()
-	b. add result of flip coin to Horses[i]
-	c. print the track of horses with printTrack()
-		-pass in both i(horse youre printing) and the value at horses[i](place horse is
-
-
+Create race and start the race.
 ____________________________________________
 BLACKBELT
 ______________________________________________
