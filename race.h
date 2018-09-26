@@ -3,7 +3,7 @@
 
 #include <string>
 #include <sstream>
-
+#include "horse.h"
 
 class Race {
 
