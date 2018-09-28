@@ -159,16 +159,7 @@ ____________________________________________
 BLACKBELT
 ______________________________________________
 
-
--First change is to make the file run without "using namespace std;" 
-
--store history of horse races using serialization (csv file... records.csv)
-
--update values of horses after  after each race
-
--main() will become race()
-
--main() will now just call menu
+these plans did not come to fruition. file does not run
 
 
 

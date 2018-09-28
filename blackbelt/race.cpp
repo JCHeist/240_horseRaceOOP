@@ -1,6 +1,6 @@
 #include "race.h"
 
-
+#include <fstream>
 #include <string>
 #include <iostream>
 #include <cstdlib>
@@ -10,7 +10,8 @@
 Race::Race(){
 	
 	Race::length = 15;
-	Race::keepGoing = true;	
+	Race::keepGoing = true;
+
 }
 
 Race::Race(int length){
@@ -22,6 +23,7 @@ Race::Race(int length){
 void Race::printLane(int horseNumber){
 	std::stringstream track;//create variable
         int i;
+
         //go through each possible spot in the track for selected horse
         for(i = 0; i < Race::length; i ++){
                 //check if horse is there.
@@ -48,13 +50,26 @@ void Race::printLane(int horseNumber){
 
 }
 
-void Race::start(){
-	
+void Race::start(){	
 	std::srand(time(NULL));//set random seed based off of current time   
 
 	int i;
 	
+	std::ofstream openedFile;
+	openedFile.open("account.dat");
+	std::string hold;
 
+		if(!openedFile.eof()){
+	
+			openedFile.getLine(openedFile, hold);
+			
+
+		}else{
+
+
+
+		}
+	
 	//declare variables for for loop
 
 	int coin;
@@ -96,7 +111,14 @@ void Race::start(){
 			}
 		}
 	}
+}
+int Race::changeAccount(){	
 
+	std::ofstream openedFile;
+	
 
+	openedfile.open("account.dat");
 
 }
+
+

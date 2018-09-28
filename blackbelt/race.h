@@ -12,14 +12,16 @@ class Race {
 		Horse horses[5];
 		int length;
 		bool keepGoing;
+		int accountVal;
 	public:
 		Race();
 		Race(int length);	
 		void printLane(int horseNumber);
 		void start();
+		void changeAccount();
 
 
 };
 
 
-#endif
+
