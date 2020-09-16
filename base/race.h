@@ -1,4 +1,4 @@
-#ifndef RACE_H_EXISTS
+Race(int length); #ifndef RACE_H_EXISTS
 #define RACE_H_EXISTS
 
 #include <string>
